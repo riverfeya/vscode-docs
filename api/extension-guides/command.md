@@ -9,7 +9,7 @@ MetaDescription: A guide to using commands programmatically in Visual Studio Cod
 
 # Commands
 
-Команды запускают действия в Visual Studio Code. Если вы когда-либо[configured a keybinding](/docs/getstarted/keybindings), то вы работали с командами.Команды также используются расширениями для предоставления функций пользователям, привязки к действиям в пользовательском интерфейсе VS Code и реализации внутренней логики.
+Команды запускают действия в Visual Studio Code. Если вы когда-либо[configured a keybinding](/docs/getstarted/keybindings), то вы работали с командами. Команды также используются расширениями для предоставления функций пользователям, привязки к действиям в пользовательском интерфейсе VS Code и реализации внутренней логики.
 
 ## Использование команд
 
@@ -17,9 +17,9 @@ VS Code включает большой набор [встроенных ком�
 
 ### Программное выполнение команд
 
-[`vscode.commands.executeCommand`](/api/references/vscode-api#commands.executeCommand) API programmatically executes a command. This lets you use VS Code's built-in functionality, and build on extensions such as VS Code's built-in Git and Markdown extensions.
+[`vscode.commands.executeCommand`](/api/references/vscode-api#commands.executeCommand) API программно выполняет команду. Это позволяет использовать встроенную функциональность кода и основываться на расширениях, таких как встроенные в VS Code расширения GIT и Маркдаун.
 
-The `editor.action.addCommentLine` command, for example, comments the currently selected lines in the active text editor:
+Команда `editor.action.addCommentLine` , например, комментирует выбранные в настоящее время строки в активном текстовом редакторе:
 
 ```ts
 import * as vscode from 'vscode';
@@ -29,7 +29,7 @@ function commentLine() {
 }
 ```
 
-Some commands take arguments that control their behavior. Commands may also return a result. The API-like `vscode.executeDefinitionProvider` command, for example, queries a document for definitions at a given position. It takes a document URI and a position as arguments, and returns a promise with a list of definitions:
+Некоторые команды принимают аргументы, которые контролируют их поведение. Команды также могут вернуть результат. API-like `vscode.executeDefinitionProvider` команда, например, запрашивает документ для определений на данной позиции. Она принимает URI документа и позицию в качестве аргументов, и возвращает промис со списком определений:
 
 ```ts
 import * as vscode from 'vscode';
@@ -52,14 +52,14 @@ async function printDefinitionsForActiveEditor() {
 }
 ```
 
-To find available commands:
+Посмотреть доступные команды:
 
-- [Browse the keyboard shortcuts](/docs/getstarted/keybindings)
-- [Look through VS Code's built-in advanced commands api](/api/references/commands)
+- [Просмотрите сочетания клавиатуры](/docs/getstarted/keybindings)
+- [Просмотреть встроенные Advanced Commands API VS Code](/api/references/commands)
 
 ### Command URIs
 
-Commands URIs are links that execute a given command. They can be used as clickable links in hover text, completion item details, or inside of webviews.
+Команды URI - это ссылки, которые выполняют данную команду.
 
 A command URI uses the `command` scheme followed by the command name. The command URI for the `editor.action.addCommentLine` command, for example, is `command:editor.action.addCommentLine`. Here's a hover provider that shows a link in the comments of the current line in the active text editor:
 

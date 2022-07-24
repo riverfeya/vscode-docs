@@ -7,9 +7,9 @@ DateApproved: 7/7/2022
 MetaDescription: Explain how to extend Visual Studio Code's workbench area with custom UI components
 ---
 
-# Extending Workbench
+# Расширение Workbench
 
-"Workbench" refers to the overall Visual Studio Code UI that encompasses the following UI components:
+«Workbench» относится к общему пользовательскому интерфейсу кода Visual Studio, который охватывает следующие компоненты пользовательского интерфейса:
 
 - Title Bar
 - Activity Bar
@@ -18,7 +18,7 @@ MetaDescription: Explain how to extend Visual Studio Code's workbench area with 
 - Editor Group
 - Status Bar
 
-VS Code provides various APIs that allow you to add your own components to the Workbench. For example, in the image below:
+VS Code предоставляет различные API, которые позволяют добавлять свои собственные компоненты в Workbench.
 
 ![workbench-contribution](images/extending-workbench/workbench-contribution.png)
 
@@ -33,17 +33,17 @@ With the [`contributes.viewsContainers`](/api/references/contribution-points#con
 
 ## Tree View
 
-With the [`contributes.views`](/api/references/contribution-points#contributes.views) Contribution Point, you can add new Views that display in any of the View Containers. Learn more at the [Tree View](/api/extension-guides/tree-view) topic.
+With the [`contributes.views`](/api/references/contribution-points#contributes.views) Contribution Point, вы можете добавить новые Views которые будут отображаться в любом из View Containers. Узнайте больше в [Tree View](/api/extension-guides/tree-view).
 
 ## Webview
 
-Webviews are highly customizable views built with HTML/CSS/JavaScript. They display next to text editors in the Editor Group areas. Read more about Webview in the [Webview guide](/api/extension-guides/webview).
+Webviews высоко кастомизированые views построенные на HTML/CSS/JavaScript. Они отображают рядом с редакторами текста в областях группы редакторов. Почитайте больше о Webview в [Webview guide](/api/extension-guides/webview).
 
 ## Status Bar Item
 
-Extensions can create custom [`StatusBarItem`](/api/references/vscode-api#StatusBarItem) that display in the Status Bar. Status Bar Items can show text and icons and run commands on click events.
+Extensions могут создавать кастомные [`StatusBarItem`](/api/references/vscode-api#StatusBarItem) который отображается в строке состояния. Элементы строки состояния могут отображать текст и значки и запускать команды на событиях клика.
 
-- Show text and icons
-- Run a command on click
+- Отображать текст и иконки
+- Запустить команду по клику
 
-You can learn more by reviewing the [Status Bar extension sample](https://github.com/microsoft/vscode-extension-samples/tree/main/statusbar-sample).
+Вы можете узнать больше, просмотрев [примеры Status Bar](https://github.com/microsoft/vscode-extension-samples/tree/main/statusbar-sample).
