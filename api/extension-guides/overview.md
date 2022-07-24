@@ -9,9 +9,9 @@ MetaDescription: Learn from Visual Studio Code extension guides and code samples
 
 # Extension Guides
 
-Once you have learned the basics of Visual Studio Code Extension API in the [Hello World](/api/get-started/your-first-extension) sample, it's time to build some real-world extensions. While the [Extension Capabilities](/api/extension-capabilities/overview) section offers high-level overviews of what an extension **can** do, this section contains a list of detailed code guides and samples that explains **how** to use a specific VS Code API.
+После того, как вы изучите основы Visual Studio Code Extension API в примере [Hello World](/api/get-started/your-first-extension) , настанет время создать реальное расширение. В то время как раздел [Extension Capabilities](/api/extension-capabilities/overview)предлагает общий обзор того, что расширение **может** делать, этот раздел содержит список подробных руководств по коду и примеров, которые объясняют, **как** использовать конкретный API VS Code.
 
-In each guide or sample, you can expect to find:
+В каждом руководстве или примере вы можете найти:
 
 - Thoroughly commented source code.
 - A gif or image showing the usage of the sample extension.
@@ -21,9 +21,9 @@ In each guide or sample, you can expect to find:
 - Real-world extensions resembling the sample.
 - Explanation of API concepts.
 
-## Guides & Samples
+## Пуководства и примеры
 
-Here are the guides on the VS Code website, including their usage of the [VS Code API](/api/references/vscode-api) and [Contribution Points](/api/references/contribution-points). Don't forget to refer to the [UX Guidelines](/api/ux-guidelines/overview) to learn the user interface best practices for creating extensions.
+Вот руководства на веб-сайте VS Code, в том числе их использование[VS Code API](/api/references/vscode-api) и [Contribution Points](/api/references/contribution-points). Не забудьте о [UX Guidelines](/api/ux-guidelines/overview) чтобы изучить лучшие практики пользовательского интерфейса для создания расширений.
 
 | Guide on VS Code Website | API & Contribution |
 | --- | --- |

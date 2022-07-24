@@ -9,15 +9,15 @@ MetaDescription: A guide to using commands programmatically in Visual Studio Cod
 
 # Commands
 
-Commands trigger actions in Visual Studio Code. If you have ever [configured a keybinding](/docs/getstarted/keybindings), then you've worked with commands. Commands are also used by extensions to expose functionality to users, bind to actions in VS Code's UI, and implement internal logic.
+Команды запускают действия в Visual Studio Code. Если вы когда-либо[configured a keybinding](/docs/getstarted/keybindings), то вы работали с командами.Команды также используются расширениями для предоставления функций пользователям, привязки к действиям в пользовательском интерфейсе VS Code и реализации внутренней логики.
 
-## Using Commands
+## Использование команд
 
-VS Code includes a large set of [built-in commands](/api/references/commands) that you can use to interact with the editor, control the user interface, or perform background operations. Many extensions also expose their core functionality as commands that users and other extensions can leverage.
+VS Code включает большой набор [встроенных команд](/api/references/commands) которые вы можете использовать для взаимодействия с редактором, управлять пользовательским интерфейсом, или выполнять фоновые операции. Многие расширения также предоставляют свои основные функции в виде команд, которые могут использовать пользователи и другие расширения.
 
-### Programmatically executing a command
+### Программное выполнение команд
 
-The [`vscode.commands.executeCommand`](/api/references/vscode-api#commands.executeCommand) API programmatically executes a command. This lets you use VS Code's built-in functionality, and build on extensions such as VS Code's built-in Git and Markdown extensions.
+[`vscode.commands.executeCommand`](/api/references/vscode-api#commands.executeCommand) API programmatically executes a command. This lets you use VS Code's built-in functionality, and build on extensions such as VS Code's built-in Git and Markdown extensions.
 
 The `editor.action.addCommentLine` command, for example, comments the currently selected lines in the active text editor:
 
