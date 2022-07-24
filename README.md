@@ -1,15 +1,15 @@
 <p align="center">
   <img alt="vscode logo" src="images/logo-stable.png" width="100px" />
-  <h1 align="center">Visual Studio Code Documentation</h1>
+  <h1 align="center">Документиация Visual Studio Code</h1>
 </p>
 
-You've found the Visual Studio Code documentation GitHub repository, which contains the content for the [Visual Studio Code documentation](https://code.visualstudio.com/docs).
+Это GitHub реппозиторий Visual Studio Code, который содержит контент для [Visual Studio Code documentation](https://code.visualstudio.com/docs).
 
-Topics submitted here will be published to the [Visual Studio Code](https://code.visualstudio.com) portal.
+Представленные здесь темы будут опубликованы на портале [Visual Studio Code](https://code.visualstudio.com).
 
-If you are looking for the VS Code product GitHub repository, you can find it [here](https://github.com/microsoft/vscode).
+Если вы ищете репозиторий продукта VS-code GitHub, вы можете его найти его [здесь](https://github.com/microsoft/vscode).
 
->**Note**: The vscode-docs repository uses [Git LFS](https://git-lfs.github.com/) (Large File Storage) for storing binary files such as images and `.gif`s. If you are contributing or updating images, please enable Git LFS per the instructions in the [Contributing](#cloning) section below.
+>**Note**: реппозиторий vscode-docs использует [Git LFS](https://git-lfs.github.com/) (Large File Storage) для хранения бинарных файловтаких как картинки и `.gif`ки. Если вы вкладываете или обновляете изображения, пожалуйста, включите GIT LFS по инструкциям в разделе [Contributing](#cloning).
 
 ## Index
 
