@@ -25,13 +25,13 @@
 
 ## Visual Studio Code
 
-[VS Code](https://code.visualstudio.com/) это легковесный редактор исходного кода и мощная среда разработки для построения и отладки современных веб, мобтльных, и облачных приложений. It is free and available on your favorite platform - Linux, macOS, and Windows.
+[VS Code](https://code.visualstudio.com/) это легковесный редактор исходного кода и мощная среда разработки для построения и отладки современных веб, мобильных, и облачных приложений. Он свободный и доступен для вашей платформы - Linux, macOS, и Windows.
 
-If you landed here looking for other information about VS Code, head over to [our website](https://code.visualstudio.com) for additional information.
+Если вы попали сюда в поиске другой информации о VS-code, пройдите на [наш сайт](https://code.visualstudio.com) за дополнительной информацией.
 
 ## Feedback
 
-If you want to give documentation feedback, please use the feedback control located at the bottom of each documentation page.
+Если вы хотите дать обратную связь с документацией, используйте управление обратной связью, расположенную в нижней части каждой страницы документации.
 
 ## Documentation Issues
 
@@ -45,7 +45,7 @@ To contribute new topics/information or make changes to existing documentation, 
 
 ### Workflow
 
-The two suggested workflows are:
+Два предложенных рабочих процесса:
 
 - For small changes, use the "Edit" button on each page to edit the Markdown file directly on GitHub.
 - If you plan to make significant changes or preview the Markdown files in VS Code, [clone](#cloning) the repo to [edit and preview](https://code.visualstudio.com/docs/languages/markdown) the files directly in VS Code.
@@ -54,28 +54,28 @@ The two suggested workflows are:
 
 ### Cloning
 
-1. Install [Git LFS](https://git-lfs.github.com/).
-2. Run `git lfs install` to setup global git hooks. You only need to run this once per machine.
-3. SSH auth: `git clone git@github.com:microsoft/vscode-docs.git`<br>HTTPS auth: `git clone https://github.com/microsoft/vscode-docs.git`
-4. Now you can `git add` binary files and commit them. They'll be tracked in LFS.
+1. Установка [Git LFS](https://git-lfs.github.com/).
+2. Запуск `git lfs install` для настройки глобальных хуков GIT. Вам нужно запустить только один раз на машину.
+3. SSH аутентификация: `git clone git@github.com:microsoft/vscode-docs.git`<br>HTTPS авторизация: `git clone https://github.com/microsoft/vscode-docs.git`
+4. Теперь вы можете `git add` бинарные файлы и коммитнуть их. Тогда они будут отслеживаться LFS.
 
-#### Cloning without binary files
+#### Клонирование без бинарных файлов
 
-You might want to clone the repo without the 1.6GB images. Here are the steps:
+Вы можете клонировать репо без изображений 1,6 ГБ. Вот шаги:
 
-1. Install [Git LFS](https://git-lfs.github.com/).
-2. Run `git lfs install` to setup global git hooks. You only need to run this once per machine.
-3. Clone the repo without binary files.
+1. Устанвите [Git LFS](https://git-lfs.github.com/).
+2. Запустите `git lfs install` для настройки глобального хука git. Вам нужно запустить только один раз на машину.
+3. Клонировать репо без двоичных файлов.
     - macOS / Linux:
-      - SSH auth: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:microsoft/vscode-docs.git`
-      - HTTPS auth: `GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/microsoft/vscode-docs.git`
+      - SSH авторизация: `GIT_LFS_SKIP_SMUDGE=1 git clone git@github.com:microsoft/vscode-docs.git`
+      - HTTPS авторизация: `GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/microsoft/vscode-docs.git`
     - Windows:
-      - SSH auth: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:microsoft/vscode-docs.git`
-      - HTTPS auth: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone https://github.com/microsoft/vscode-docs.git`
-4. Now you can selectively checkout some binary files to work with. For example:
-    - `git lfs pull -I "docs/nodejs"` to only download images in `docs/nodejs`
-    - `git lfs pull -I "release-notes/images/1_4*/*"` to only download images in `release-notes/images/1_4*`
-    - `git lfs pull -I "docs,api"` to download all images in `docs` and in `api`
+      - SSH авторизация: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone git@github.com:microsoft/vscode-docs.git`
+      - HTTPS авторизация: `$env:GIT_LFS_SKIP_SMUDGE="1"; git clone https://github.com/microsoft/vscode-docs.git`
+4. Теперь вы можете выборочно оформить некоторые двоичные файлы для работы с ними. Например:
+    - `git lfs pull -I "docs/nodejs"` для загрузки изображений только `docs/nodejs`
+    - `git lfs pull -I "release-notes/images/1_4*/*"` для загрузки изображений только из `release-notes/images/1_4*`
+    - `git lfs pull -I "docs,api"` для загрузки всех изображений из `docs` и `api`
     - `git lfs pull -I <PATTERN>`, as long as `<PATTERN>` is a valid [Git LFS Include and Exclude pattern](https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-fetch.1.ronn#include-and-exclude).
 
 The history of this repo before we adopted LFS can be found at [microsoft/vscode-docs-archive](https://github.com/microsoft/vscode-docs-archive).
